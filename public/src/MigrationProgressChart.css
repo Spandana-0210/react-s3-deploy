@@ -1,0 +1,97 @@
+.migration-progress-chart {
+  background: linear-gradient(135deg, rgba(255, 255, 255, 0.1), rgba(255, 255, 255, 0.05));
+  backdrop-filter: blur(10px);
+  border-radius: 16px;
+  padding: 1.5rem;
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  box-shadow: 0 8px 32px rgba(0, 0, 0, 0.1);
+}
+
+.migration-progress-chart h3 {
+  color: white;
+  margin: 0 0 1rem 0;
+  font-size: 1.3rem;
+  font-weight: 600;
+  text-align: center;
+}
+
+.chart-info {
+  margin-bottom: 1.5rem;
+}
+
+.progress-summary {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 1rem;
+  margin-bottom: 1rem;
+}
+
+.progress-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0.5rem 1rem;
+  background: rgba(255, 255, 255, 0.05);
+  border-radius: 8px;
+  border: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.progress-item .label {
+  color: rgba(255, 255, 255, 0.7);
+  font-size: 0.9rem;
+}
+
+.progress-item .value {
+  color: white;
+  font-weight: 600;
+}
+
+.progress-item .value.completed {
+  color: #10b981;
+}
+
+.pie-chart-container {
+  height: 250px;
+  margin: 1.5rem 0;
+  position: relative;
+}
+
+.breakdown-stats {
+  margin-top: 1.5rem;
+}
+
+.stat-row {
+  display: flex;
+  justify-content: space-around;
+  margin-bottom: 0.5rem;
+}
+
+.stat-item {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  color: white;
+  font-size: 0.9rem;
+}
+
+.stat-dot {
+  width: 12px;
+  height: 12px;
+  border-radius: 50%;
+}
+
+.stat-item.created .stat-dot {
+  background: #10b981;
+}
+
+.stat-item.existed .stat-dot {
+  background: #3b82f6;
+}
+
+.stat-item.failed .stat-dot {
+  background: #ef4444;
+}
+
+.stat-item.skipped .stat-dot {
+  background: #f59e0b;
+}
